@@ -1,0 +1,8 @@
+ostream& operator<<(ostream& os, Fractions& frac ){
+	if (frac.getWhole() != 0){
+		os<<frac.getWhole()<<"&"<<frac.getTop()<<"/"<<frac.getBot();
+	}else{
+		os<<frac.getTop()<<"/"<<frac.getBot();
+	}
+	return os;
+}
